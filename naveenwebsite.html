@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container .main{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            background-color:#0bceaf ;
+            height: 100vh;
+        }
+        .container .main img{
+            border-radius: 50%;
+        }
+        .main h1{
+            position: relative;
+            top: 140px;
+            left: 80px;
+            font-family: sans-serif;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 0.5px;
+            color: white;
+            font-size: 52px;
+            font-weight: bolder;
+        }
+        .main h2{
+            position: relative;
+            top: 220px;
+            left: -350px;
+        }
+        .main h3{
+            position: relative;
+            top: 100px;
+            left: 120px;
+        }
+        #a{
+            position: relative;
+            bottom: 300px;
+            left:500px;
+            padding: 10px 25px;
+            border-radius: 10px;
+            border-color: transparent;
+        }
+        .main img{
+            position: relative;
+            top: 40px;
+            left: 20px;
+        }
+        .main p{
+            position: relative;
+            top: 320px;
+            right:350px;
+        }
+        #b{
+            position: relative;
+            top: 320px;
+            right: 390px;
+            size: 200px;
+            color: white;   
+        }
+        .nav{
+            position: sticky;
+            top: 0.1px;
+            background-color: white;
+            z-index: 1;
+        }
+        .nav ul{
+            position: relative;
+            height: 5%;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            background-color:bisque;
+            font-size: 20px;
+            padding: 10px;
+            align-items: center;
+            }
+        .nav a{
+            text-decoration: none;
+        }
+        .nav ul button{
+            padding: 10px 25px;
+            border-radius: 10px;
+        }
+        .about h1{
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 0.9px;
+            font-size: 120px;
+            text-align: center;
+        }
+        .about h2{
+            text-align: center;
+            position: relative;
+            top: -90px;
+            color: blue;
+        }
+        .about img{
+            border-radius: 20px;
+            margin-left: 20px;
+        }
+        .about h3{
+            margin-left: 550px;
+            position: relative;
+            bottom: 400px;
+            font-size: 30px;
+        }
+        .about p{
+            margin-left: 450px;
+            position: relative;
+            bottom:350px;
+        }
+        .about1{
+            margin-left: 450px;
+            position: relative;
+            bottom: 300px;
+        }
+        .about2 h3{
+            margin-right: 100px;
+        }
+        .about2{
+            margin-left: 800px;
+            position: relative;
+            bottom: 470px;
+        }
+        .about2 button{
+            padding: 10px 25px;
+            color: #0bceaf;
+            background-color: transparent;
+            border-radius: 10px;
+            margin-top: 80px;
+            position: relative;
+            right: 350px;
+            top: 10px;
+        }
+        .quality{
+            position: relative;
+            bottom: 350px;
+        }
+        .quality h1{
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 0.9px;
+            font-size: 120px;
+            text-align: center;
+        }
+        .quality h2{
+            text-align: center;
+            position: relative;
+            top: -80px;
+            right: 39px;
+            color: blue;
+        }
+        .education{
+            margin-left: 100px;
+            padding: 5px;
+            position: relative;
+            bottom: 350px;
+        }
+        .skills h1{
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 0.9px;
+            font-size: 120px;
+            text-align: center;
+            position: relative;
+            bottom: 350px;
+        }
+        .skills h3{
+            text-align: center;
+            margin-left: -30px;
+            position: relative;
+            bottom: 80px;
+            color: blue;
+            position: relative;
+            bottom: 440px;
+        }
+        .skills2{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 50px;
+            margin-right: 50px;
+            size: 30px;
+            margin-bottom: 100px;
+            position: relative;
+            bottom: 300px;
+        }
+        .gallery h1{
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 0.9px;
+            font-size: 120px;
+            text-align: center;
+            position: relative;
+            bottom: 350px;
+        }
+        .gallery h2{
+            text-align: center;
+            margin-left: -30px;
+            position: relative;
+            bottom: 80px;
+            color: blue;
+            position: relative;
+            bottom: 430px;
+        }
+        .navy a{
+            text-decoration: none;
+            color:#0bceaf;
+        }
+        .navy{
+            margin-left: 200px;
+            position: relative;
+            bottom: 350px;    
+        }
+        .navy button{
+            font-size: 30px;
+            border:1px solid;
+            border-radius:50px;
+            width: 200px;
+            color: #0bceaf;
+        }
+        .navy button:hover{
+            background-color: #0bceaf;  
+        }
+        .navy button a:hover{
+            color:white;    
+        }
+        #aa:hover{
+            color: white;
+        }
+        .images{
+            position: relative;
+            bottom:300px;
+            margin-left:30px;
+            width: fit-content;
+        }
+        .contact h1{
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 0.9px;
+            font-size: 120px;
+            text-align: center;
+            position: relative;
+            bottom: 270px;
+        }
+        .contact h2{
+            font-size:40px;
+            text-align: center;
+            margin-left: -30px;
+            position: relative;
+            bottom: 80px;
+            color: blue;
+            position: relative;
+            bottom: 360px;
+
+        }
+        .contact2{
+            margin-left:200px;
+            position: relative;
+            bottom: 250px;   
+        }
+        .contact2 button{
+            margin-left:350px;
+            border:1px solid;
+            font-size:20px;
+            width:150px;
+            height:50px;
+            border-radius:50px;
+            color: #0bceaf;
+        }
+        .contact2 button:hover{
+            background-color: #0bceaf;
+            color:white;
+        }
+        .footer{
+            background-color:#0bceaf;
+            height:300px;    
+        }
+        #ab{
+        background-color: white;
+        border: 1px solid black;
+        font-size:20px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+    .start{
+        margin-left: 520px;
+        position: relative;
+        top:50px;
+    }
+    .ex{
+    position: relative;
+    top:80px;
+    margin-left:450px;
+
+   }
+    start:hover{
+        background-color: red;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="main">
+        <img src="./ank.jpeg" alt="" width="350px" height="350px">
+        <h3>I'm</h3>
+        <h1 >ARE NAVEEN KUMAR</h1>
+        <h2>Full stack Developer</h2>
+        <i id="b" class="fa-solid fa-circle-play fa-beat-fade" style="width: 25px; font-size: 50px;"></i>
+        <p>Play video</p>
+    </div>
+    <button id="a">Download Resume</button>
+    <div class="nav">
+        <ul>
+            <h2><span>My</span> PortFolio</h2>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Quality</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li><br>
+            <button>Hire Me</button>
+        </ul>
+    </div>
+    <div class="about">
+        <h1>ABOUT</h1>
+        <h2>ABOUT ME</h2>
+        <img src="./ank.jpeg" alt="" width="400px" height="400px">
+        <h3>Full Stack Web Developer</h3>
+        <p>Hi!! I'm Naveen. I'm an engineering Graduate seeking to learn everything I can, about how to build a successful career. I would like to be a Business Analyst that's why I'm so excited to explore new things.</p>
+    </div>
+    <div class="about1">
+        <h3>Name: ARE NAVEEN KUMAR</h3><br>
+        <h3>Degree: Bachelor of Technology</h3><br>
+        <p>Mobile No: 8096858075</p><br>
+        <p>Address<address>2-46, Namapur, Mustabad, Rajanna siricilla, 505404</address></p><br>
+    </div>
+    <div class="about2">
+        <h3>Birthday: 12/06/2002</h3>
+        <h3>Experience Level: Fresher</h3>
+        <h3>E-mail: <E-mail>naveenkumarare66@gmail.com</E-mail></h3><br>
+        <button>Hire Me</button>
+        <button>Learn More</button>
+    </div>
+    <div class="quality">
+        <h1>QUALITY</h1>
+        <h2>EDUCATION</h2>
+    </div>
+    <div class="education">
+        <h1>My Education:</h1><br>
+        <h2>Bachelor's in Electrical & Electronics</h2><br>
+        <h3>JNTUH Affiliated | 2020-2023</h3><br>
+        <p>A Bachelor's degree in Electrical and Electronics Engineering is an undergraduate program that focuses on the principles,    theories, and applications of electrical and electronic systems. This field of study is at the intersection of electrical engineering and electronics, encompassing a wide range of topics related to the generation, distribution, and utilization of electrical power, as well as the design and development of electronic devices and systems.</p><br>
+        <h2>Diploma in Electrical & Electronics </h2><br>
+        <h3>TS SBTET | 2017-2020</h3><br>
+        <p>A Diploma in Electrical and Electronics is a short-term, practical-oriented program that provides students with fundamental knowledge and skills in the field of electrical and electronics engineering.</p><br>
+        <h2>Matriculation</h2><br>
+        <h2>TS BSE | 2017</h2><br>
+    </div>
+    <div class="skills">
+        <h1>SKILLS</h1>
+        <h3>MY SKILLS</h3>
+    </div>
+    <div class="skills2">
+        <h4><input type="range">  HTML</h4>
+        <h4><input type="range"> CSS</h4>
+        <h3><input type="range"> MATLAB</h3>
+        <h3><input type="range"> MS OFFICE</h3>
+        <h3><input type="range" name="" id="">Problem solving</h3>
+    </div>
+    <div class="gallery">
+        <h1>GALLERY</h1>
+        <h2>MY PORTFOLIO</h2>
+        <div class="navy">
+        <button id="aa"><a href="">All</a></button>
+        <button><a href="">Design</a></button>
+        <button><a href="">Development</a></button>
+        <button><a href="">Marketing</a></button>
+    </div>
+    <div class="images">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGZvbGlvJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBvcnRmb2xpbyUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBvcnRmb2xpbyUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="">
+        </div>
+    </div>
+    <div class="contact">
+        <h1>CONTACT</h1>
+        <h2>CONTACT ME</h2>
+        <div class="contact2">
+            <input type="text" placeholder="Your Name" style="border-radius: 50px; width: 400px; height: 50px; text-align: center;">
+            <input type="text" placeholder="Your Email" style="border-radius: 50px; width: 400px;height:50px; text-align: center;"> <br> <br>
+            <input type="text" placeholder="Subject" style="border-radius: 50px ; width: 800px; height:70px;text-align: center"> <br>  <br>
+            <input type="text" placeholder="Message" style="border-radius: 50px; width:800px;height: 100px;text-align: center;" > <br> <br>
+            <button>Send message</button>
+        </div>
+    </div>
+      <div class="footer">
+            <div class="start">
+                <button id="ab"> <i class="fa-brands fa-instagram"  ></i></button> 
+                <button id="ab"><i class="fa-brands fa-twitter"  ></i></button>
+                <button id="ab"><i class="fa-brands fa-linkedin " ></i></button>
+                <button id="ab"><i class="fa-brands fa-facebook" ></i></button>
+            </div>
+            <div class="ex">
+                <h1>Privacy | Terms | FAQs | Help </h1><br>
+                <p>© ARE NAVEEN KUMAR. All Rights Reserved. Designed by HTML, CSS.</p>
+            </div>
+    </div>
+</body>
+</html>
